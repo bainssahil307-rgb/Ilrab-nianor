@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ilrab Nianor ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="heart">♡</div>
+
+        <p class="small-text">
+            16 JANUARY • 4:13 AM 🌷
+        </p>
+
+        <h1>
+            Ilrab Nianor
+        </h1>
+
+        <p class="subtitle">
+            A little story made especially for you...
+        </p>
+
+        <p class="opening-note">
+            Some moments become memories...
+            and some people become a beautiful part of life. 🌸
+        </p>
+
+
+        <!-- MUSIC -->
+
+        <audio id="ourSong" loop>
+
+            <source
+                src="music/our-song.oga"
+                type="audio/ogg">
+
+        </audio>
+
+
+        <button
+            onclick="toggleMusic()"
+            id="musicButton">
+
+            🎵 Play Our Song
+
+        </button>
+
+
+        <button onclick="startStory()">
+
+            Tap to Begin ❤️
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         TAP STORY
+    ========================== -->
+
+    <section
+        class="tap-story"
+        id="story">
+
+
+        <div
+            class="story-counter"
+            id="storyCounter">
+
+            1 / 6
+
+        </div>
+
+
+        <div class="story-card">
+
+
+            <p
+                class="section-label"
+                id="storyLabel">
+
+                16 JANUARY • 4:13 AM 🌷
+
+            </p>
+
+
+            <h2 id="storyTitle">
+
+                The Beginning ❤️
+
+            </h2>
+
+
+            <p
+                class="tap-text"
+                id="storyText">
+
+                Shayad us tym mne bhi koni pata tha
+                ki ek chota sa purpose meri zindagi ka
+                itna khoobsurat hissa ban jega. ❤️
+
+            </p>
+
+
+            <img
+                class="story-image"
+                id="storyImage"
+                src="photos/Screenshot_20260915_164419_Gallery.jpg"
+                alt="A special memory">
+
+
+        </div>
+
+
+        <button
+            class="continue-btn"
+            onclick="nextStory()">
+
+            Tap to Continue ✨
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         COMPACT PHOTO ALBUM
+    ========================== -->
+
+    <section
+        class="memory-album"
+        id="memories">
+
+
+        <p class="section-label">
+
+            OUR LITTLE MEMORIES 📸
+
+        </p>
+
+
+        <h2>
+
+            Little Moments, Big Memories ❤️
+
+        </h2>
+
+
+        <p class="album-intro">
+
+            Kuch tasveerein sirf photos nahi hoti...
+            woh un moments ko dobara jeene ka
+            ek chhota sa tareeka hoti hain. 🌷
+
+        </p>
+
+
+        <div class="photo-album">
+
+
+            <!-- COUNTER -->
+
+            <div
+                class="album-counter"
+                id="albumCounter">
+
+                1 / 13
+
+            </div>
+
+
+            <!-- PHOTO -->
+
+            <div class="album-photo-box">
+
+
+                <img
+                    id="albumImage"
+                    src="photos/Screenshot_20260916_150103_Gallery.jpg"
+                    alt="Memory">
+
+
+                <p id="albumCaption">
+
+                    One of those special moments ❤️
+
+                </p>
+
+
+            </div>
+
+
+            <!-- MANUAL CONTROLS -->
+
+            <div class="album-controls">
+
+
+                <button
+                    onclick="previousAlbumPhoto()">
+
+                    ‹
+
+                </button>
+
+
+                <button
+                    onclick="nextAlbumPhoto()">
+
+                    ›
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ALBUM END -->
+
+        <div class="album-ending">
+
+            <p>
+
+                Some memories stay close to the heart. 🧿❤️
+
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ANNIVERSARY MESSAGE
+    ========================== -->
+
+    <section
+        class="message"
+        id="message">
+
+
+        <p class="section-label">
+
+            A MESSAGE FOR YOU
+
+        </p>
+
+
+        <h2>
+
+            Happy 8 Months ❤️
+
+        </h2>
+
+
+        <div class="love-letter">
+
+
+            <p>
+
+                Mai har chij thukra sku yr thamne khush
+                dekhn vaste. I really love u soo much
+                my 𝑰𝒍𝒓𝒂𝒃 𝑵𝒊𝒂𝒏𝒐𝒓 🌻🤌
+
+            </p>
+
+
+            <p>
+
+                Laddi is rishte ka koi naam beshak na ho
+                lekin jo understanding, care, respect,
+                love or sukoon isme milaa hai…
+                mere vaste vo kisi naam se kam koni ❤️
+
+            </p>
+
+
+            <p>
+
+                Thamne meri kmi meri glti ke sath bhi
+                merte itni support kri hai.
+                Syad mai itna na kr pata agr tham na
+                sath dete too 🫂
+
+            </p>
+
+
+            <p>
+
+                Kade bhi meri kmi ginakr glt koni btaya..
+                mujhe samjha.. sambhala or apnaya.
+                Sach me aap mne merte bhi jyada samjho ho. 🥺❤️
+
+            </p>
+
+
+            <p>
+
+                Ise jyada precious mere vste kuch bhi koni bugge. 🫀
+
+            </p>
+
+
+            <p>
+
+                Mmy ka mne apne bete jaisa samajhna or
+                merpe itna trust karna isjanam me do maa
+                ka pyaar milna mere liye kisi blessing se
+                kam koni yrr 🥺🫀
+
+            </p>
+
+
+            <p>
+
+                Yo sab possible ho paya bs thare karn.
+                Itna lucky sayd e koi hoga yr jitna sukh
+                mne meri lyf me mila bs thare krke yr 🥰🫂💫
+
+            </p>
+
+
+            <p>
+
+                Mai bss nyu chahu tham hamesha nyue haste
+                khush rhte mere samne raho.
+                Thari smile mere liye bahut special hai,
+                or mai jitna ho ske utna us smile ko
+                hamesha isi triya barkr rkhuga. 🫂
+
+            </p>
+
+
+            <p>
+
+                Ib tk ye relation itna badhia rhya hai.
+                Itna mjak kra hai, hasse, roast kra hai 😁
+                thoda romentic bna hu but mjaa bhot aaya hai 😝
+                laddu ldai bhi hoi, pyar bhi bahut ryaa.
+
+            </p>
+
+
+            <p>
+
+                Mne itna kuch kde bhi kisi k sath koni
+                feel hoya jitna aap gle hoya hai ❤️🤌
+                bs ye hamesha nyue rvhe is khtr bhot mhnt
+                krage yr. Job leke jldi si ye distance km
+                krage or sath rhvage 🤗🫀
+
+            </p>
+
+
+            <p class="final-wish">
+
+                Happy 8 Months anniversary to us
+                meri sabse special person. 🌸🥳
+
+            </p>
+
+
+            <p class="final-love">
+
+                I love youu, I really miss uu nd 🥹
+
+                <br><br>
+
+                I will choose you today, tomorrow and every day
+                meri jaan 🧿🌸
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section class="final">
+
+
+        <div class="heart">
+
+            ♡
+
+        </div>
+
+
+        <h2>
+
+            Our Story Is Still Being Written...
+
+        </h2>
+
+
+        <p>
+
+            And maybe the most beautiful memories
+            are still waiting for us. 🌷
+
+        </p>
+
+
+        <h3>
+
+            Happy 8 Months ❤️
+
+        </h3>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         MAIN SCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+
+    <!-- =========================
+         MUSIC CONTROL
+    ========================== -->
+
+    <script>
+
+        function toggleMusic() {
+
+            const song =
+                document.getElementById("ourSong");
+
+            const button =
+                document.getElementById("musicButton");
+
+
+            if (song.paused) {
+
+                song.play();
+
+                button.innerHTML =
+                    "Ⅱ Pause Our Song";
+
+            }
+
+            else {
+
+                song.pause();
+
+                button.innerHTML =
+                    "🎵 Play Our Song";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

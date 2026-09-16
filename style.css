@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050510;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+
+/* ---------- OPENING SCREEN ---------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #252550 0%,
+            #0d0d25 45%,
+            #050510 100%
+        );
+}
+.hero::before,
+.hero::after {
+    content: "♡";
+
+    position: absolute;
+
+    font-size: 180px;
+
+    opacity: 0.04;
+
+    pointer-events: none;
+}
+
+.hero::before {
+    top: 8%;
+    left: -30px;
+    transform: rotate(-20deg);
+}
+
+.hero::after {
+    bottom: 5%;
+    right: -30px;
+    transform: rotate(20deg);
+}
+.heart {
+    font-size: 75px;
+    margin-bottom: 20px;
+
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.small-text {
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.65;
+    margin-bottom: 20px;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 25px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #30305f 0%,
+            #151535 35%,
+            #080815 70%,
+            #030308 100%
+        );
+}
+
+.subtitle {
+    font-size: 17px;
+    opacity: 0.75;
+    margin-bottom: 35px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+    padding: 15px 30px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.08);
+    color: white;
+
+    font-size: 16px;
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+}
+
+
+/* ---------- STORY ---------- */
+
+.story {
+    min-height: 100vh;
+
+    padding: 100px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #08081a,
+            #10102b,
+            #08081a
+        );
+
+    position: relative;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.story h2,
+.message h2,
+.final h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.story-text {
+    max-width: 650px;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    color: #f2f2f8;
+
+    margin-bottom: 25px;
+
+    padding: 25px 22px;
+
+    border-left: 2px solid rgba(255,255,255,0.25);
+
+    background: rgba(255,255,255,0.035);
+
+    border-radius: 0 15px 15px 0;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+}
+
+
+/* ---------- LOVE MESSAGE ---------- */
+
+.message {
+    min-height: 100vh;
+
+    padding: 90px 25px;
+
+    background: #050510;
+}
+
+.message h2 {
+    text-align: center;
+}
+
+.love-letter {
+    max-width: 700px;
+    margin: auto;
+}
+
+.love-letter p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    opacity: 0.88;
+
+    margin-bottom: 28px;
+}
+
+.final-wish {
+    text-align: center;
+
+    font-size: 20px !important;
+
+    margin-top: 45px;
+}
+
+.final-love {
+    text-align: center;
+
+    font-size: 20px !important;
+
+    line-height: 2 !important;
+}
+
+
+/* ---------- FINAL SCREEN ---------- */
+
+.final {
+    min-height: 100vh;
+
+    padding: 90px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #252550 0%,
+            #0d0d25 50%,
+            #050510 100%
+        );
+}
+
+.final p {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    opacity: 0.8;
+}
+
+.final h3 {
+    margin-top: 45px;
+
+    font-size: 25px;
+}.journey-card {
+    width: 100%;
+    max-width: 600px;
+
+    margin-top: 25px;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.04);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.35);
+}
+
+.journey-date {
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.75;
+}
+
+.journey-line {
+    font-size: 35px;
+
+    margin: 18px 0;
+
+    opacity: 0.8;
+}
+
+.journey-card p {
+    margin-top: 25px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    opacity: 0.7;
+}/* ---------- LOVE LETTER CARD ---------- */
+
+.love-letter {
+    position: relative;
+
+    padding: 35px 28px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.018)
+        );
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.4);
+}
+
+.love-letter::before {
+    content: "♡";
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+    opacity: 0.65;
+}
+
+.love-letter p {
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.love-letter p:last-child {
+    border-bottom: none;
+}/* ---------- FINAL ANIMATION ---------- */
+
+.final .heart {
+    font-size: 85px;
+
+    animation:
+        heartbeat 2s infinite,
+        floatHeart 4s ease-in-out infinite;
+}
+
+@keyframes floatHeart {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.final h2 {
+    max-width: 600px;
+
+    line-height: 1.4;
+
+    animation: fadeUp 1.5s ease;
+}
+
+.final p {
+    animation: fadeUp 2s ease;
+}
+
+.final h3 {
+    animation: fadeUp 2.5s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}/* ---------- MOBILE RESPONSIVE ---------- */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .small-text {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .heart {
+        font-size: 65px;
+    }
+
+    .story h2,
+    .message h2,
+    .final h2 {
+        font-size: 27px;
+    }
+
+    .story-text {
+        font-size: 16px;
+        padding: 20px 18px;
+    }
+
+    .love-letter {
+        padding: 28px 20px;
+    }
+
+    .love-letter p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .final p {
+        font-size: 16px;
+    }
+
+    .final h3 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}.opening-note {
+    max-width: 420px;
+
+    margin-top: -15px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    opacity: 0.55;
+
+    font-style: italic;
+}/* ---------- TAP STORY ---------- */
+
+.tap-story {
+    min-height: 100vh;
+
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #252550 0%,
+            #10102b 45%,
+            #050510 100%
+        );
+}
+
+.story-counter {
+    position: absolute;
+
+    top: 30px;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.5;
+}
+
+.story-card {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 40px 25px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.045);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.4);
+
+    animation: storyAppear 0.7s ease;
+}
+
+.story-card h2 {
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+.tap-text {
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    opacity: 0.85;
+
+    white-space: pre-line;
+}
+
+.continue-btn {
+    margin-top: 35px;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+}
+
+@keyframes storyAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}.story-image {
+    display: block;
+
+    width: 100%;
+    max-width: 450px;
+
+    height: auto;
+
+    margin: 25px auto 5px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}/* CINEMATIC PHOTO TRANSITION */
+
+.story-image {
+    animation: photoReveal 0.9s ease;
+}
+
+@keyframes photoReveal {
+
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+
+}/* SOFT NIGHT SKY */
+
+body::before {
+    content: "✦  ·  ˚  ✧  ·  ✦  ˚  ·  ✧  ·  ˚  ✦";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    font-size: 18px;
+    letter-spacing: 28px;
+    line-height: 70px;
+    opacity: 0.12;
+    animation: starsMove 12s linear infinite;
+}
+
+@keyframes starsMove {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
+
+}/* =========================
+   COMPACT MEMORY ALBUM
+========================= */
+
+.memory-album {
+    min-height: auto;
+    padding: 55px 15px;
+    text-align: center;
+}
+
+.memory-album h2 {
+    margin-bottom: 10px;
+}
+
+.album-intro {
+    max-width: 420px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.photo-album {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.album-counter {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.album-photo-box {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 8px 8px 12px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.album-photo-box img {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    opacity: 1;
+    transform: scale(1);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+.album-photo-box p {
+    margin: 10px 4px 0;
+    font-size: 13px;
+}
+
+.album-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 14px;
+}
+
+.album-controls button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    font-size: 25px;
+}
+
+.album-ending {
+    max-width: 400px;
+    margin: 30px auto 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
